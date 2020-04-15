@@ -1,0 +1,47 @@
+body {
+    background: url(bg.jpg) no-repeat fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.clock{
+    position: absolute;
+    top : 43%;  
+    left : 50%;
+    transform : translateX(-50%) translateY(-50%);
+    color: black;
+    font-size : 50px;
+    font-family: 'Trebuchet MS';
+
+}
+.huruf {
+    position: absolute;
+    top : 50%;  
+    left : 50%;
+    transform : translateX(-50%) translateY(-50%);
+    color: black;
+    font-size : 30px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    animation: fadeIn 8s ;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.sad {
+    position: absolute;
+    top : 55%;  
+    left : 50%;
+    transform : translateX(-50%) translateY(-50%);
+    color: black;
+    font-size : 30px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    animation: fadeIn 8s ;
+}
