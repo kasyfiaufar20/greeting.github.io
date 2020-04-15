@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Greeting </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="MyclockDisplay" class="clock"></div>
+        <div id="halo" class="huruf"></div>
+        <div id="hai" class="sad"></div>
+        <div class="gbr"></div>
+        <script type="text/javascript">
+            function showtime(){
+                var date = new Date();
+                var H = date.getHours();
+                var M = date.getMinutes();
+                var S = date.getSeconds();
+                if (H < 12 && H > 0 && M > 59){
+                    greet = "Good Morning";
+                } 
+                else if(H>12 && H < 20){
+                    greet = "Good Afternoon";
+                }else if (H >= 20 && H <= 23){
+                    greet = "Good Evening, catel";
+                    gret = "i love you";
+                }
+
+                H = (H < 10) ? "0" + H : H ;
+                M = (M < 10) ? "0" + M : M ;
+                S = (S < 10) ? "0" + S : S ;
+
+                var time = H + ":" + M + ":" + S ;
+                var ucapan = greet;
+                document.getElementById("MyclockDisplay").innerText = time;
+                document.getElementById("MyclockDisplay").textContent = time;
+                document.getElementById("halo").innerText = greet;
+                document.getElementById("hai").innerText = gret;
+                
+            
+                setTimeout(showtime, 1000);
+            }
+            showtime() ;
+        </script>  
+    </body>
+</html>
